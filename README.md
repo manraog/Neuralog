@@ -1,6 +1,7 @@
 # Neuralog 
 
 Click para ver el Video
+
 [![Video](https://img.youtube.com/vi/L-YZDdAM1cM/0.jpg)](https://www.youtube.com/watch?v=L-YZDdAM1cM)
 
 Sistema de control domótico. Permite interactuar con dispositivos de la casa mediante una interfaz gráfica en PyQt4 y comandos de voz que son procesados por 
@@ -28,7 +29,7 @@ Este proyecto hace uso de las siguientes herramientas/librerías:
 	- LibROSA (Procesamiento de Audio)
 	- SciPy, Numpy y Pandas
 
-El modelo que use es un clasificador. Se introducen 2600 Mel-frequency cepstral coefficients extraídos de 3 segundos de audio, solo dos clases de 
+El modelo usado es un clasificador. Se introducen 2600 Mel-frequency cepstral coefficients extraídos de 3 segundos de audio, solo dos clases de 
 salida (Sí/No), dos capas ocultas; la primera tiene 1800 neuronas y la segunda 500.
 
 La red se entrenó con un dropout de 75%, factor de aprendizaje de 0.0001 usando Adam Optimizer y tomando sets de 5 muestras (mini batch) hasta completar 
@@ -41,7 +42,7 @@ de forma parecida a las muestras para que sean mejor reconocidas.
 
 ![Precisión](precision.png)
 
-Más información sobre el funcionamiento de la red y los Mel-frequency cepstral coefficients en [este Jupyter Notebook](Info/RedNeuronal.ipynb)
+Más información sobre el funcionamiento de la red y los Mel-frequency cepstral coefficients en [este Jupyter Notebook (Info/RedNeuronal.ipynb)](Info/RedNeuronal.ipynb)
 
 ----------------------------------------------------------------------------------
 
@@ -50,7 +51,7 @@ Más información sobre el funcionamiento de la red y los Mel-frequency cepstral
 > (!) Esta guía se creo para ser utilizada en Debian o Raspbian Jessie y posiblemente Ubuntu (No lo probé)
 > (!) Puedes utilizar apt-get en lugar de aptitude (gusto personal)
 
-###1. Instalar Python 3.4, pip y venv
+### Instalar Python 3.4, pip y venv
 
 - Pip es el gestor de paquetes oficial de python (librerías)
 - Venv permite instalar paquetes para python en un entorno aislado sin interferir con las librerías del sistema
@@ -59,29 +60,29 @@ Más información sobre el funcionamiento de la red y los Mel-frequency cepstral
 sudo aptitude install python3 python3-pip python3-dev python3-venv
 ```
 
-Crear un entorno virtual para nuestro proyecto
+### Crear un entorno virtual para nuestro proyecto
 ```bash
 mkdir ~/venvs
 mkdir ~/venvs/ProyectoFinalv
 python3 -m ~/venvs/ProyectoFinalv
 ```
 
-Activamos el entorno
+### Activamos el entorno
 ```bash
 source ~/venvs/ProyectoFinal/bin/activate
 ```
 
-Actualizar pip
+### Actualizar pip
 ```bash
 pip install -U pip
 ```
 
-Herramientas para instalar desde pip
+### Instalar herramientas para pip
 ```bash
 pip install -U setuptools
 ```
 
-Si queremos salir
+### Si queremos salir
 ```bash
 deactivate
 ```
@@ -95,11 +96,11 @@ deactivate
 
 ## 2. Configurar 
 
-### Paso por paso
+### a) Paso por paso
 Los "componentes" se encuentran separados en carpetas y dentro de cada carpeta se encuentra un README con las instrucciones 
 necesarias para instalar las herramientas necesarias y/o hacer modificaciones.
 
-### Camino corto (Solo 64-bits)
+### b) Camino corto (Solo 64-bits)
 
 Instalar los paquetes necesarios
 ```bash
@@ -130,7 +131,7 @@ cd Neuralog
 
 Yo utilizo un Arduino Micro conectado de la siguiente forma
 
-(Imagen)
+![Diagrama](Arduino/diagrama.png)
 
 Para adaptarlo a otro hay que editar el sketch que se encuentra en *Arduino/control_serial.ino* y cambiar la placa y los pines a los que se conectan los componentes.
 
