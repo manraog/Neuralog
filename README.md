@@ -38,9 +38,9 @@ todo los datos (1 época), el proceso se repitió por por 50 épocas.
 Al final la red quedo sobre entrenada pero mostró buenos resultados con los datos de prueba que no había visto la red, aún así tengo que pronunciar las palabras 
 de forma parecida a las muestras para que sean mejor reconocidas.
 
-![Error](error.png)
+![Error](imagenes/error.png)
 
-![Precisión](precision.png)
+![Precisión](imagenes/precision.png)
 
 Más información sobre el funcionamiento de la red y los Mel-frequency cepstral coefficients en [este Jupyter Notebook (Info/RedNeuronal.ipynb)](Info/RedNeuronal.ipynb)
 
@@ -113,7 +113,8 @@ Instalar las librerias para Python
 pip install pyserial speake3 pyswip_alt numpy==1.12.1 scipy==0.19.0 matplotlib==2.0.0 jupyter==1.0.0 pandas==0.20.1 pip install pyaudio==0.2.11 librosa==0.5.1 tensorflow==1.1.0
 ```
 
-> (!) Para una lista detallada consultar el archivo requeriments.txt (resultado del comando pip freeze)
+> (!) Para una lista detallada consultar el archivo requeriments.txt (resultado del comando pip freeze) por lo que se podría usar el siguiente comando para tener un entornoidéntico:
+> pip install -r requeriments.txt 
 
 ------------------------------------------------------------------------------------
 
