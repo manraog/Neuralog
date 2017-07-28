@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/ricardo/Dropbox/SisInt/ProyectoFinal/RedNeuronal/modelos/1800-500-SR/red-voz"
+all_model_checkpoint_paths: "/home/ricardo/Dropbox/SisInt/ProyectoFinal/RedNeuronal/modelos/1800-500-SR/red-voz"
