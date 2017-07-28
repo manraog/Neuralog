@@ -6,7 +6,7 @@
 
 ## Instalación de herramientas
 
-###1. Instalar  librerías y paquetes para la GUI con QT 4
+### 1. Instalar  librerías y paquetes para la GUI con QT 4
 
 - QT4 Designer (Herramienta que permite la creación de GUIs de forma visual)
 - PyQt4 (Bindings para QT4 en Python)

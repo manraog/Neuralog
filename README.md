@@ -7,11 +7,16 @@ Click para ver el Video
 Sistema de control domótico. Permite interactuar con dispositivos de la casa mediante una interfaz gráfica en PyQt4 y comandos de voz que son procesados por 
 una red neuronal en Tensorflow, toda la información se encuentra en una base de conocimiento en SWI-Prolog.
 
+El asistente de voz lista los objetos en el cuarto según la ubicación de la persona en la casa (sensores 
+infrarrojos) y la red neuronal reconoce las palabras *sí* y *no*, si la palabra es *sí* cambia de estado el objeto (encender/apagar) y si la palabra es *no* 
+deja el objeto sin cambios.
+
 Este proyecto hace uso de las siguientes herramientas/librerías:
 - Webcam
 - Arduino
 	- Arduino Micro
 	- Arduino IDE
+	- Sensores infrarrojos CNY70
 	- Sensor de temperatura DS18B20
 	- C.I 74HC595 (Registro de corrimiento)
 	- LEDs

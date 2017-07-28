@@ -6,7 +6,7 @@
 
 ## Intalación de herramientas
 
-###1. Instalar Espeak
+### 1. Instalar Espeak
 
 - Espeak (Sintetizado de texto a voz)
 
@@ -14,7 +14,7 @@
 sudo aptitude install espeak
 ```
 
-###2. Instalar 
+### 2. Instalar 
 
 - Speake (Librería que permite interactuar Espeak desde Python)
 

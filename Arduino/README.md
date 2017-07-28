@@ -6,7 +6,7 @@
 
 ## Instalación de herramientas
 
-###1. Instalar Arduino IDE
+### 1. Instalar Arduino IDE
 
 ```bash
 sudo aptitude install arduino
@@ -17,7 +17,7 @@ Actualizar pip
 pip install -U pip
 ```
 
-###2. Instalar libreria PySerial
+### 2. Instalar libreria PySerial
 - PySerial (Permite enviar y recibir información mediante puertos seriales)
 Nos movemos a nuestro virualenv
 ```bash

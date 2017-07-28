@@ -5,7 +5,7 @@
 
 ## Instalar herramientas
 
-###1. Instalar librerias para un entorno similar a Matlab
+### 1. Instalar librerias para un entorno similar a Matlab
 
 - Numpy (Algebra lineal)
 - Scipy (Funciones para ciencias e ingenierias)
@@ -19,7 +19,7 @@ sudo aptitude install pkg-config libpng-dev libfreetype6-dev
 pip install numpy==1.12.1 scipy==0.19.0 matplotlib==2.0.0 jupyter==1.0.0 pandas==0.20.1
 ```
 
-###2. Instalar librerías  para grabar audio y extraer caracteristicas, configurar la entrada por defecto###
+### 2. Instalar librerías  para grabar audio y extraer caracteristicas, configurar la entrada por defecto###
 
 - PyAudio (graba y reproduce audio)
 - LibROSA (libreria para analisis de audio, se usara para obtener Mel-frequency cepstral coefficients como caracteristica de los audios)
@@ -58,14 +58,14 @@ Si el volumen es muy bajo prueba modificando el volumen de tus bocinas y el del 
 
 
 
-###3. Instalar Tensorflow (librería para modelar redes neuronales)###
+### 3. Instalar Tensorflow (librería para modelar redes neuronales)###
 
-#####Para equipos de 64 bits
+##### Para equipos de 64 bits
 ```bash
 pip install tensorflow==1.1.0
 ```
 
-#####Para equipos de 32 bits es necesario compilar:
+##### Para equipos de 32 bits es necesario compilar:
 
 - Asegurarse de tener activado el entorno virtual para los siguientes pasos, en mi caso:
 ```bash
@@ -185,7 +185,7 @@ python
 
  Va a devolver el valor de hola al ejecutar la sesion. Para salir de python usar *exit()*
 
-#####Para Raspberry Pi
+##### Para Raspberry Pi
 Pendiente...
 
 > *Referencias:*
@@ -198,7 +198,7 @@ Pendiente...
 
 ## Configurar
 
-###1. Tomar muestras con *toma_muestras.py*
+### 1. Tomar muestras con *toma_muestras.py*
 
 Se mostraran una a una las palabras a decir y la forma en que deben decirse. Los las muestras se guardan en la carpeta */RedNeuronal/muestras* con formato WAV y nombre 
 de la forma:
@@ -210,7 +210,7 @@ Puede modificarse modificando las palabras en la lista *PALABRAS* y formas de pr
 Las muestras con las que entrene el modelo pueden descargarse aquí y se ponen en la carpeta muestras
 
 
-###2. Procesar las muestras con *procesa_muestras.py*
+### 2. Procesar las muestras con *procesa_muestras.py*
 
 Falta pulir un poco para configurar más rápido los parámetros.
 
@@ -233,7 +233,7 @@ La cantidad de valores en la entrada (si no se modifico el tiempo de grabado no 
 La cantidad de neuronas en las 2 capas ocultas con las variables *CAPA_OCULTA1_NEURONAS* y *CAPA_OCULTA2_NEURONAS*
 
 
-###3. Entrenar la red neuronal con *entrena_RN.py*
+### 3. Entrenar la red neuronal con *entrena_RN.py*
 
 Antes de ejecutarlo se puede cambiar: 
 - La cantidad de muestras a usar por mini batch con la variable *MINI_BATCH.*
@@ -259,7 +259,7 @@ python -m tensorflow.tensorboard --logdir=/home/ricardo/Dropbox/SisInt/ProyectoF
 Sustituyendo *1000-200-SR* con el nombre correspondiente a tu red.
 
 
-###4. Probar la red neuronal en condiciones reales con *prueba_RedNeuronal.py*
+### 4. Probar la red neuronal en condiciones reales con *prueba_RedNeuronal.py*
 
 Si se modifico el modelo al entrenar se deben cambiar las cadenas en la sección *Pasa a red Neuronal* con los nombre del modelo.
 

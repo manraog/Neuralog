@@ -6,7 +6,7 @@
 
 ## Instalar herramientas
 
-###1. Instalar Prolog
+### 1. Instalar Prolog
 
 - SWI-Prolog (Implementación de prolog más usada)
 
@@ -14,7 +14,7 @@
 sudo aptitude install swi-prolog
 ```
 
-###2. Instalar PYSWIP
+### 2. Instalar PYSWIP
 
 - PySWIP (Librería que permite interactuar con SWI-Prolog desde Python, no esta muy actualizada ni tiene mucha documentación, pero es la más reciente de las que existen, tampoco tiene soporte para Python 3 :c )
 
